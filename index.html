@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fluid top">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item tip_calc_heading">Tip Calculator</li>
+				  </ul>
+				</div><br>
+				<label for="bill">Enter bill amount</label>
+				<input type="number" id="" name="bill" class="bill form-control" placeholder=""><br>
+				<label for="service">How was the service</label>
+				<select name="service" id="" class="service form-control">
+					<option></option>
+				  	<option value="good">Good</option>
+				  	<option value="fair">Fair</option>
+				  	<option value="bad">Bad</option>
+				</select><br>
+				<label for="share">How many people are sharing the bill</label>
+				<input type="number" id="" name="share" class="share form-control" placeholder=""><br>
+				<button class="btn btn-danger calculate" id="">Calculate</button>
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="card">
+						  <ul class="list-group list-group-flush">
+						    <li class="list-group-item tip_details_heading">Tip Details</li>
+						  </ul>
+						</div><br>
+						<div class="">
+			                <div class="tip">
+			                    <div class="tip__list">
+			                        <!-- <div class="item clearfix" id="tip-0">
+			                            <div class="item__description">Salary</div>
+			                            <div class="right clearfix">
+			                                <div class="item__value">+ 2,100.00</div>
+			                                <div class="item__delete">
+			                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        
+			                        <div class="item clearfix" id="tip-1">
+			                            <div class="item__description">Sold car</div>
+			                            <div class="right clearfix">
+			                                <div class="item__value">+ 1,500.00</div>
+			                                <div class="item__delete">
+			                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+			                                </div>
+			                            </div>
+			                        </div> -->
+			                    </div>
+			                </div>
+			            </div>
+					</div>
+					<div class="col-md-7">
+						<div class="card">
+						  <ul class="list-group list-group-flush">
+						    <li class="list-group-item account_details_heading">Account Details</li>
+						  </ul>
+						</div><br>
+						<div>
+							<p>Total Tips: <span class="total_tips">$21122.4</span></p><br>
+							<p>Tips in Percentage: <span class="tips_percentage">$21122.4</span></p><br>
+							<p>Total Bills: <span class="total_bills">$23235.6</span></p><hr>
+							<p>Total Expenses: <span class="total_expenses" style="color: red">$45566.2</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card card-body">
+					<p>Total Account balance: <span class="total_account_balance" style="color: #28B9B5">$76767.7</span><span style="float: right; color: red; vertical-align: middle" class="alert"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
